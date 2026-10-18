@@ -20,5 +20,5 @@ dnf in -y micro btop fastfetch fish starship flatpak
 dnf upgrade -y --refresh && dnf autoremove -y && dnf clean all
 
 # Configuration
-command -v fish | tee -a /etc/shells
-useradd -D -s $(command -v fish)
+#command -v fish | tee -a /etc/shells
+#useradd -D -s $(command -v fish)

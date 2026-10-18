@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Copr Plugin
 dnf in -y 'dnf5-command(copr)'
 

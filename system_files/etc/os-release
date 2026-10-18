@@ -1,0 +1,15 @@
+NAME="KitsuneLinux"
+VERSION="45"
+RELEASE_TYPE=beta
+ID=kitsune
+ID_LIKE="fedora"
+VERSION_ID=45
+VERSION_CODENAME=""
+PRETTY_NAME="Kitsune Linux 45"
+ANSI_COLOR="0;38;2;120;40;160"
+LOGO=kitsune-logo
+CPE_NAME="cpe:/o:garrettptech:kitsunelinux-kde:45.20261015.0-x86_64"
+DEFAULT_HOSTNAME="kitsunelinux"
+PLATFORM_ID="platform:f45"
+VARIANT="bootc"
+VARIANT_ID=kitsunelinux

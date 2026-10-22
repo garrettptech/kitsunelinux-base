@@ -1,22 +1,20 @@
 #!/bin/bash
+set -oue pipefail
 
 # Copr Plugin
 dnf in -y 'dnf5-command(copr)'
 
-# Kernel swap
+# Kernel Swap
 dnf copr enable -y bieszczaders/kernel-cachyos
 dnf in -y kernel-cachyos kernel-cachyos-devel-matched zram-generator-defaults
 dnf rm -y kernel-core-*
 
-# Drivers \ Networking
-dnf in -y ntfs-3g btrfs-progs langpacks-en glibc-all-langpacks NetworkManager
+# Drivers & Etc
+dnf in -y ntfs-3g btrfs-progs langpacks-en glibc-all-langpacks
 
 # System Packages
 dnf copr enable -y atim/starship
-dnf in -y micro btop fastfetch fish starship flatpak 
-
-# Remove fedora repo before environment
-#flatpak remote-delete fedora
+dnf in -y micro btop fastfetch fish starship flatpak @virtualization distrobox NetworkManager
 
 # Clean Up
 dnf upgrade -y --refresh && dnf autoremove -y && dnf clean all

@@ -2,7 +2,7 @@ FROM scratch as ctx
 COPY build_files /
 
 #FROM quay.io/fedora/fedora-bootc:45
-FROM quay.io/fedora-ostree-desktops/base-atomic:45.20261015.0-x86_64 as base
+FROM quay.io/fedora-ostree-desktops/base-atomic:45 as base
 
 COPY system_files /
 

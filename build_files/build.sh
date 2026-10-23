@@ -2,7 +2,7 @@
 set -oue pipefail
 
 # Copr Plugin
-dnf in -y 'dnf5-command(copr)'
+dnf in -y dnf-plugins-core
 
 # Kernel Swap
 dnf copr enable -y bieszczaders/kernel-cachyos

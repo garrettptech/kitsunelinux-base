@@ -5,7 +5,7 @@ set -oue pipefail
 dnf in -y dnf-plugins-core
 
 # Kernel Swap
-dnf copr enable -y bieszczaders/kernel-cachyos
+dnf copr enable -y bieszczaders/kernel-cachyos fedora-45-x86_64
 dnf in -y kernel-cachyos kernel-cachyos-devel-matched zram-generator-defaults
 dnf rm -y kernel-core-*
 

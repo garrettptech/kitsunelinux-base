@@ -1,4 +1,4 @@
-# Kitsune Linux 
+# Kitsune Linux Base Image
 
 This repository creates a immuatuble linux base image using bootc.
 

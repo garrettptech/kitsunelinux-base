@@ -1,10 +1,6 @@
 #!/bin/bash
 set -oue pipefail
 
-# Copr Plugin
-sudo dnf install -y 'dnf5-command(copr)'
-echo -n "max_parallel_downloads=10" >> /etc/dnf/dnf.conf
-
 drivers=(
     ntfs-3g
     btrfs-progs
@@ -19,9 +15,9 @@ sys_pkgs=(
     fish 
     starship 
     flatpak 
-    @virtualization 
     distrobox 
     NetworkManager
+    @virtualization
 )
 
 #Install & Cleanup

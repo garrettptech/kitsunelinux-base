@@ -4,8 +4,6 @@ COPY build_files /
 FROM quay.io/fedora/fedora-bootc:45 as base
 COPY system_files /
 
-#FROM ghcr.io/ublue-os/akmods-extra:main as akmods
-
 #Runs Scripts
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \

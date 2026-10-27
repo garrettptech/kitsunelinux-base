@@ -12,11 +12,10 @@ sys_pkgs=(
     micro
     btop 
     fastfetch 
-    fish 
-    starship 
+    #fish 
+    #starship 
     flatpak 
     distrobox 
-    NetworkManager
     @virtualization
 )
 

@@ -9,6 +9,7 @@ drivers=(
 )
 
 sys_pkgs=(
+    tmux
     micro
     btop 
     fastfetch 
@@ -20,5 +21,5 @@ sys_pkgs=(
 )
 
 #Install & Cleanup
-dnf copr enable -y atim/starship fedora-45-x86_64
+#dnf copr enable -y atim/starship fedora-45-x86_64
 dnf install -y "${drivers[@]}" "${sys_pkgs[@]}" && dnf upgrade -y --refresh && dnf autoremove -y && dnf clean all

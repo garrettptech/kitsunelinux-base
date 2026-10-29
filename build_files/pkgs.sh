@@ -6,10 +6,10 @@ drivers=(
     btrfs-progs
     langpacks-en
     glibc-all-langpacks
+    PackageKit
 )
 
 sys_pkgs=(
-    tmux
     micro
     btop 
     fastfetch 
@@ -21,5 +21,6 @@ sys_pkgs=(
 )
 
 #Install & Cleanup
-#dnf copr enable -y atim/starship fedora-45-x86_64
-dnf install -y "${drivers[@]}" "${sys_pkgs[@]}" && dnf upgrade -y --refresh && dnf autoremove -y && dnf clean all
+#dnf copr enable -y atim/starship
+dnf install -y "${drivers[@]}" "${sys_pkgs[@]}" && dnf rm -y firefox htop nvtop
+dnf upgrade -y --refresh && dnf autoremove -y && dnf clean all
